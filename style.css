@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display&display=swap');
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    background-color: #660808;
+    padding: 1rem;
+}
+
+nav{
+    background-color: #000009;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+ul a{
+    color: #dbd9d9;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
