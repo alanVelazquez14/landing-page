@@ -45,7 +45,12 @@ header {
 }
 
 nav {
-  background-color: var(--nav-bg);
+  background: rgb(113, 9, 9);
+  background: linear-gradient(
+    0deg,
+    rgba(113, 9, 9, 1) 0%,
+    rgba(0, 0, 0, 1) 78%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,13 +65,13 @@ nav {
   height: 60px;
 }
 
-ul a {
+.nav-list a {
   font-size: 20px;
   color: var(--bg-btn);
   text-decoration: none;
 }
 
-ul {
+.nav-list {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -131,13 +136,224 @@ ul {
   width: 400px;
 }
 .info-about {
-  padding: 100px;
+  margin: 50px;
+  text-align: center;
   max-width: 1000px;
 }
 
 .info-about-p {
-  margin: 50px 50px 50px 50px;
   font-family: "Space Grotesk", sans-serif;
   font-size: 10px;
+  align-items: center;
+}
+.section-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-cards-title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   text-align: center;
+  padding: 50px;
+  max-width: 1000px;
+}
+
+.section-cards-title h3 {
+  font-size: 30px;
+}
+
+.section-cards-title p {
+  font-size: 10px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.cards-benefict {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.cards-benefict div {
+  text-align: center;
+}
+
+.cards-benefict img {
+  width: 50px;
+}
+
+.cards-benefict h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.cards-benefict p {
+  font-size: 10px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.cards-benefict-info {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+hr {
+  margin-top: 50px;
+  border: 1px solid black;
+  width: 90%;
+}
+
+.section-contact {
+  margin-top: 50px;
+  display: flex;
+}
+
+.section-contact h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.section-contact h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+}
+
+.section-contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-info-ul {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#section {
+  text-align: left;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer img {
+  width: 70px;
+}
+
+/*Animaciones con el carrito de compras*/
+
+#cart-toggle {
+  display: none;
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  background: rgb(113, 9, 9);
+  background: linear-gradient(
+    0deg,
+    rgba(113, 9, 9, 1) 0%,
+    rgba(0, 0, 0, 1) 78%
+  );
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: calc(100vh - 70px);
+  overflow: auto;
+  display: none;
+}
+
+.cart img {
+  width: 50px;
+}
+
+.products {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  padding: 30px;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+.prod-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products h5 {
+  font-size: 20px;
+}
+
+.products span {
+  font-size: 15px;
+}
+
+.products-handler {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  align-items: center;
+}
+
+.products-handler button {
+  height: 30px;
+  width: 30px;
+  background-color: #660808;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.products-handler p {
+  font-size: 18px;
+}
+
+.cart-hr {
+  border: 2px solid white;
+  width: 90%;
+  margin: 25px;
+}
+
+.cart-price {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.cart-button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  margin: 20px;
+}
+
+#cart-toggle:checked + .cart {
+  display: flex;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 60px;
+}
+
+.menu-toggle img {
+  width: 30px;
 }
